@@ -230,3 +230,19 @@ window.addEventListener('load', () => {
   updateTestimonialSlider();
   startAutoplay();
 });
+
+ const button = document.querySelector('.add-to-cart-btn');
+  const btnText = button.querySelector('.btn-text');
+  const loader = button.querySelector('.btn-loader');
+
+  button.addEventListener('click', () => {
+    // Show loader
+    btnText.textContent = 'Adding...';
+    loader.style.display = 'inline-block';
+
+    // Simulate loading
+    setTimeout(() => {
+      loader.style.display = 'none';
+      btnText.textContent = 'Go to Cart';
+    }, 1500);
+  });

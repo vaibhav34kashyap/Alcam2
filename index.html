@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
 
 
 
@@ -17,43 +18,44 @@
     <div class="top-bar">
         GET 25% OFF YOUR FIRST MONTH. FREE SHIPPING ON U.S. ORDERS.
     </div>
+    <div class="ingredients-section">
 
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container-width">
-            <div class="header-work">
-                <div class="logo">
-                    <img src="./assets/logo.png" class="logo-img" alt="Logo" />
-                </div>
-
-                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-                <ul class="nav-menu" id="navMenu">
-                    <li>Home</li>
-                    <li>
-                        Shop <span class="dropdown-icon"><img src="./assets/Dropicon.png" alt="" /></span>
-                    </li>
-                    <li>Elements</li>
-                    <li>About Us</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-
-                <div class="header-right">
-                    <div class="search-container" id="searchContainer">
-                        <input type="text" class="search-input" placeholder="Search For Products..." />
-                        <img src="./assets/search.png" class="search-icon" alt="Search" onclick="toggleSearch()" />
+        <!-- Header Section -->
+        <header class="header bg-trancprent">
+            <div class="container-width">
+                <div class="header-work">
+                    <div class="logo">
+                        <img src="./assets/logo.png" class="logo-img" alt="Logo" />
                     </div>
-                    <button class="cta-btn">
-                        Try Alcami <span class="right-arrow">&#8594;</span>
-                    </button>
+
+                    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+                    <ul class="nav-menu" id="navMenu">
+                        <li>Home</li>
+                        <li>
+                            Shop <span class="dropdown-icon"><img src="./assets/Dropicon.png" alt="" /></span>
+                        </li>
+                        <li>Elements</li>
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+
+                    <div class="header-right">
+                        <div class="search-container" id="searchContainer">
+                            <input type="text" class="search-input" placeholder="Search For Products..." />
+                            <img src="./assets/search.png" class="search-icon" alt="Search" onclick="toggleSearch()" />
+                        </div>
+                        <button class="cta-btn">
+                            Try Alcami <span class="right-arrow">&#8594;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
 
-    <div class="ingredients-section">
+
 
 
         <!-- Banner Section -->
@@ -224,8 +226,8 @@
                         <div class="carousel-container">
                             <div class="carousel-track">
                                 <img src="./assets/mainproduct.png" alt="Product 1" />
-                                <img src="./assets/mainproduct.png" alt="Product 2" />
-                                <img src="./assets/mainproduct.png" alt="Product 3" />
+                                <img src="./assets/GreenFrount.svg" alt="Product 2" />
+                                <img src="./assets/brounfrount.svg" alt="Product 3" />
                             </div>
 
                             <div class="carousel-dots">
@@ -276,7 +278,7 @@
                             </div>
                             <div class="single2">
                                 <div>
-                                    <img src="./assets/select.svg" alt="">
+                                    <input type="radio" name="plan" checked />
                                     <p class="chossse2">Single Kit Subscription</p>
                                 </div>
                                 <div>
@@ -342,7 +344,11 @@
                                 </div>
                             </label>
 
-                            <button class="add-to-cart">Add to Cart →</button>
+                        <button class="add-to-cart-btn">
+  <span class="btn-text">Add to Cart →</span>
+  <span class="btn-loader"></span>
+</button>
+
                         </div>
 
 
